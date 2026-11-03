@@ -5,8 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Landing ochilganda hero rasmni JS kutmasdan darhol yuklay boshlaymiz
+      if (/^#?nipt/.test(location.hash) || /\/nipt\/?$/.test(location.pathname)) {
+        var l = document.createElement('link')
+        l.rel = 'preload'; l.as = 'image'; l.href = (location.pathname.endsWith('/nipt') ? '/' : '') + 'landing/hero.webp'
+        l.setAttribute('fetchpriority', 'high')
+        document.head.appendChild(l)
+      }
+    </script>
     <title>VIAMED — Klinika boshqaruvi</title>
-    <script type="module" crossorigin src="./assets/index-BJK4bYLB.js"></script>
+    <script type="module" crossorigin src="./assets/index-C_lXHN70.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-CpcVM-XL.css">
   </head>
   <body>
