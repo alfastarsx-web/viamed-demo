@@ -1,0 +1,1 @@
+import{r as e}from"./index-BPlVveLb.js";import{k as s,p as u}from"./data-BrRG2Toa.js";function i(t){const[n,o]=e.useState({digits:""});if(e.useEffect(()=>{},[t]),t.length===9)return s.find(r=>r.phone===t)}function c(){const[t,n]=e.useState(null);return e.useEffect(()=>{},[]),u}export{c as a,i as u};
